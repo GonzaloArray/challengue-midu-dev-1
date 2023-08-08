@@ -3,7 +3,7 @@ import { Book } from "../types/book.type";
 import { books, max_pages } from "../service/book";
 
 export const useReadList = () => {
-  const [genre, setGenre] = useState("");
+  const [genre, setGenre] = useState('');
   const [range, setRange] = useState(max_pages);
   const [readList, setReadList] = useState<Book[]>(
     () => JSON.parse(window.localStorage.getItem("readList") || "[]") as Book[]

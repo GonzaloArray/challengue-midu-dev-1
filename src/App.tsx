@@ -36,7 +36,7 @@ export default function App() {
               value={genre}
               onChange={(e) => setGenre(e.target.value)}
             >
-              <option value="">Todos</option>
+              <option selected value="">Todos</option>
               {genres.map((gen) => (
                 <option key={gen} value={gen}>
                   {gen}
